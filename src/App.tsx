@@ -4,7 +4,9 @@ import { SelectedPage } from "@/shared/types";
 import Home from '@/scenes/home';
 
 function App() {
-  const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home)
+  const [selectedPage, setSelectedPage] = useState<SelectedPage>(
+    SelectedPage.Home
+  );
   const [isTopOfPage, setIsTopOfPage] = useState<boolean>(true);
 
   useEffect(() => {
@@ -22,10 +24,12 @@ function App() {
   return (
     <>
       <div className="app bg-gray-20">
-        <Navbar 
-        isTopOfPage={isTopOfPage}
-        selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-        <Home setSelectedPage={setSelectedPage}/>
+        <Navbar
+          isTopOfPage={isTopOfPage}
+          selectedPage={selectedPage}
+          setSelectedPage={setSelectedPage}
+        />
+        <Home setSelectedPage={setSelectedPage} />
       </div>
 
     </>
