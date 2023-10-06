@@ -1,9 +1,8 @@
 import { HomeModernIcon, UserGroupIcon, AcademicCapIcon } from "@heroicons/react/24/solid"
 import { BenefitType, SelectedPage } from "@/shared/types"
 import { motion } from "framer-motion";
-import Htext from "@/shared/Htext";
 import Benefit from "./benefit";
-
+import HText from "@/shared/Htext";
 const benefits: Array<BenefitType> = [
     {
         icon: <HomeModernIcon className="h-6 w-6"/>,
@@ -44,7 +43,7 @@ const Benefits = ({setSelectedPage}: Props) => {
         >
             {/* HEADER */}
             <div className="md:my-5 mg:w-3/5">
-               <Htext>MORE THAN JUST A GYM</Htext>
+               <HText>MORE THAN JUST A GYM</HText>
                <p className="my-5 text-sm">
                We provide world class fitness equipment, trainers and classes to
                 get you to your ultimate fitness goals with ease. We provide true
