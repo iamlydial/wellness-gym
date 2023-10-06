@@ -2,7 +2,7 @@ import { HomeModernIcon, UserGroupIcon, AcademicCapIcon } from "@heroicons/react
 import { BenefitType, SelectedPage } from "@/shared/types"
 import { motion } from "framer-motion";
 import Benefit from "./benefit";
-import HText from "@/shared/Htext";
+import HText from "@/shared/HText";
 const benefits: Array<BenefitType> = [
     {
         icon: <HomeModernIcon className="h-6 w-6"/>,
